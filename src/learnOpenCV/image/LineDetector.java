@@ -1,4 +1,4 @@
-package learnOpenCV;
+package learnOpenCV.image;
 
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
@@ -19,12 +19,12 @@ import org.opencv.imgproc.Imgproc;
  * 1. The size of the Gaussian filter: Smaller filters cause less blurring, and allow detection of small, sharp lines. 
  * 2. Thresholds: A threshold set too high can miss important information.
  */
-public class EdgeDetector {
+public class LineDetector {
 
 	private int filterSize = 3;
 	private int threshold = 40;
 
-	private Scalar redLine = new Scalar(0, 255,0);
+	private Scalar redLine = new Scalar(0, 255, 0);
 	private double rho = 1;
 	private double theta = Math.PI / 180;
 	private double minLineLength = 0;
